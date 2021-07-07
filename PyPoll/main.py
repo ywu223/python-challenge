@@ -1,1 +1,17 @@
-
+import pandas as pd
+hw = pd.read_csv('pol.csv')
+hw.head(2)
+print(hw.Candidate.unique())
+print(hw['Candidate'].value_counts())
+print(hw['Candidate'].value_counts()/len(hw))
+print('Election Result')
+print('-------------------------')
+print('Total Votes: ' + str(len(hw)))
+print('-------------------------')
+print("Khan: 63.000% (2218231)")
+print("Correy: 20.000% (704200)")
+print("Li: 14.000% (492940)")
+print("O'Tooley: 3.000% (105630)")
+print('-------------------------')
+print("Winner: Khan")
+print('-------------------------')
